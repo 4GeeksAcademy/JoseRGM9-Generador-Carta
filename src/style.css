@@ -1,1 +1,100 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: rgb(4, 4, 110);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.carta {
+  display: inline-block;
+  background: white;
+  text-align: center;
+  margin: auto;
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
+  position: relative;
+  font-size: 100px;
+  padding-top: 180px;
+  box-shadow: 10px 10px 10px rgb(129, 4, 4);
+
+  &:before {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    font-size: 100px;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+    font-size: 100px;
+  }
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+  }
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: rgb(129, 4, 4);
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: rgb(129, 4, 4);
+  }
+}
+
+.boton-refrescar-carta {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.ancho-carta {
+  margin-bottom: 30px;
+}
+
+.altura-carta {
+  margin-bottom: 20px;
+}
+
+#refrescarBotonCarta {
+  border-radius: 10px;
+  background-color: rgb(129, 4, 4);
+  color: white;
+}
+
+#refrescarBotonTamañoCarta {
+  border-radius: 10px;
+  background-color: rgb(129, 4, 4);
+  color: white;
+}
+
+#anchoCarta {
+  background-color: rgb(129, 4, 4);
+  color: white;
+}
+
+#alturaCarta {
+  background-color: rgb(129, 4, 4);
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.pxinput {
+  color: white;
+}
